@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/pdx203
 
 PRODUCT_COPY_FILES += \
-    vendor/sony/pdx203/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/sony/pdx203/proprietary/vendor/camera/CHI08BS1/bokeh_comp.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/bokeh_comp.dat \
     vendor/sony/pdx203/proprietary/vendor/camera/CHI08BS1/color_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/color_ctrl.dat \
     vendor/sony/pdx203/proprietary/vendor/camera/CHI08BS1/dataflow.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CHI08BS1/dataflow.dat \
@@ -681,6 +680,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx203/proprietary/vendor/lib64/camera/com.sony.sensormodule.eiger_imx557.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.eiger_imx557.bin \
     vendor/sony/pdx203/proprietary/vendor/lib64/camera/com.sony.sensormodule.eiger_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.eiger_s5k3t2.bin \
     vendor/sony/pdx203/proprietary/vendor/lib64/camera/com.sony.sensormodule.icarus_imx316.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.icarus_imx316.bin
+
+PRODUCT_PACKAGES += \
+    cnss-daemon
 
 PRODUCT_PACKAGES += \
     bdwlan_bdwlan_symlink \
