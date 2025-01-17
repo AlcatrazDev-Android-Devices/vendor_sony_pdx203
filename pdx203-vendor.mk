@@ -616,6 +616,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx203/proprietary/vendor/etc/acdbdata/Sony_edo_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Sony_edo_Speaker_cal.acdb \
     vendor/sony/pdx203/proprietary/vendor/etc/change.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/change.cfg \
     vendor/sony/pdx203/proprietary/vendor/etc/chg-pwr-service.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/chg-pwr-service.cfg \
+    vendor/sony/pdx203/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/sony/pdx203/proprietary/vendor/etc/qdcm_calib_data_9.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_9.xml \
     vendor/sony/pdx203/proprietary/vendor/etc/sensors/config/kona_ak991x_0_somc_product.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_ak991x_0_somc_product.json \
     vendor/sony/pdx203/proprietary/vendor/etc/sensors/config/kona_lsm6dsm_0_somc_product.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_lsm6dsm_0_somc_product.json \
@@ -682,7 +683,21 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx203/proprietary/vendor/lib64/camera/com.sony.sensormodule.icarus_imx316.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.icarus_imx316.bin
 
 PRODUCT_PACKAGES += \
-    cnss-daemon
+    libdapparamstorage \
+    libdeccfg \
+    libdlbpreg \
+    libstagefright_soft_ac4dec \
+    libstagefright_soft_ddpdec \
+    libstagefrightdolby \
+    vendor.dolby.hardware.dms@2.0 \
+    libswdap \
+    libswgamedap \
+    libswvqe \
+    libdlbdsservice \
+    vendor.dolby.hardware.dms@2.0-impl \
+    vendor.dolby.hardware.dms.xml \
+    cnss-daemon \
+    vendor.dolby.hardware.dms@2.0-service
 
 PRODUCT_PACKAGES += \
     vendor_firmware_qca6390_bdwlan_e16 \
